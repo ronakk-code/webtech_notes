@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            margin: 5px;
+        }
+        .translate-box{
+            background-color: red;
+            transition: transform 3s;
+        }
+        .translate-box:hover{
+            transform: translate(100px , 200px) ;
+        }
+         .scale-box{
+            background-color: green;
+            transition: transform 3s;
+        }
+        .scale-box:hover{
+            transform: scale(1.5) ;
+        }
+         .rotate-box{
+            background-color: blue;
+            transition: transform 3s;
+        }
+        .rotate-box:hover{
+            transform: rotate(180deg) ;
+        }
+         .skew-box{
+            background-color: yellow;
+            transition: transform 3s;
+        }
+        .skew-box:hover{
+            transform: skew(100deg , 200deg) ;
+        }
+         .short-box{
+            background-color: purple;
+            transition: transform 3s;
+        }
+        .short-box:hover{
+            transform: translate(100px , 200px) scale(1.5) rotate(360deg) skew(10deg , 20deg)  ;
+        }
+    </style>
+</head>
+<body>
+    <div class="translate-box">translate-box</div>
+    <div class="scale-box">scale-box</div>
+    <div class="rotate-box">rotate-box</div>
+    <div class="skew-box">skew-box</div>
+    <div class="short-box">short-box</div>
+</body>
+</html>

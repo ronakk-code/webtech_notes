@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="email" placeholder="john@gmail.com" id="email"><br>
+        <input type="password" placeholder="ENTER PASSWORD" id="pass"><br>
+        <button id="btn">SUBMIT</button> <br> <br> <br>
+
+
+
+        <input type="email" placeholder="john@gmail.com" id="email1"> <br>
+        <button id="btn1">SUBMIT</button>
+        <p id="result"></p>
+    </form>
+
+    <script>
+        const btn = document.getElementById("btn")
+        btn.onclick = function(e){
+            const email = document.getElementById("email").value
+            const password = document.getElementById("pass").value
+
+            window.sessionStorage.setItem(email,password);
+            alert("DATA SAVED TO SESSION STORAGE")
+        }
+
+
+
+        const btn1 = document.getElementById("btn1")
+        btn1.onclick = function(e){
+            e.preventdefault();
+            const email1 = document.getElementById("email1").value
+
+            const userData = window.sessionStorage.getItem(email1)
+
+            if(userData!=null){
+                document.getElementById("result").textContent = userData;
+            }
+            else{
+                document.getElementById("result").textContent = "DATA NOT FOUND"
+            }
+        }
+    </script>
+</body>
+</html>

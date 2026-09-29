@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /* border: 5px solid; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 150px 150px 150px ;
+            gap: 10px;
+            padding: 10px;
+        }
+        .item-box1{
+            background-color: greenyellow;
+            border: 1px solid;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-row: 1/4;
+            grid-column: 1;
+        }
+         .item-box2{
+            background-color: greenyellow;
+            border: 1px solid;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-row: 1;
+            grid-column: 2/4;
+        }
+         .item-box3{
+            background-color: red;
+            border: 1px solid;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         .item-box4{
+            background-color: orange;
+            border: 1px solid;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         .item-box5{
+            background-color: red;
+            border: 1px solid;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         .item-box6{
+            background-color: greenyellow;
+            border: 1px solid;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 4;
+            grid-row: 2/4;
+        }
+         .item-box7{
+            background-color: red;
+            border: 1px solid;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         .item-box8{
+            background-color: orange;
+            border: 1px solid;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-box1">box-1</div>
+        <div class="item-box2">box-2</div>
+        <div class="item-box3">box-3</div>
+        <div class="item-box4">box-4</div>
+        <div class="item-box5">box-5</div>
+        <div class="item-box6">box-6</div>
+        <div class="item-box7">box-7</div>
+        <div class="item-box8">box-8</div>
+    </div>
+</body>
+</html>

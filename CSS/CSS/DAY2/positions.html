@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        height: 200px;
+        width: 100%;
+        border: 2px solid;
+    }
+        #container1{
+        height: 200px;
+        width: 100%;
+        border: 2px solid;
+    }
+    img{
+        height: 200px;
+        width: 200px;
+    }
+    #img1{
+        position: static;
+        left: 100px;
+        right: 100px;
+    }
+    #img1{
+        position: relative;
+        left: 100px;
+        top: 100px;
+    }
+    #img2{
+        position: absolute;
+        top: 100px;
+        right: 100px;
+    }
+    #img3{
+        position: fixed;
+    }
+    #img4{
+        position: fixed;
+    }
+    #img4{
+        position: sticky;
+        top: 100px;
+    }
+</style>
+<body>
+    <div id="container">
+        <img src="./images/virat.webp" alt="virat" id="img1">
+        <img src="./images/rohit.webp" alt="rohit"id="img2">
+        <img src="./images/rahul.webp" alt="rahul" id="img3">
+        <img src="./images/hardik.webp" alt="hardik" id="img4">
+    </div>
+    <div id="container1"></div>
+</body>
+</html>
